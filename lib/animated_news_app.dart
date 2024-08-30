@@ -20,9 +20,16 @@ class AnimatedNewsApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         onGenerateRoute: appRouter.generateRoute,
-        theme: ThemeData(
-          primaryColor: ColorsManager.mainGreen,
+        theme: ThemeData.from(
+          colorScheme: const ColorScheme.light(),
+        ).copyWith(
+          primaryColor: ColorsManager.lightBlue,
           scaffoldBackgroundColor: Colors.white,
+          pageTransitionsTheme: const PageTransitionsTheme(
+            builders: <TargetPlatform, PageTransitionsBuilder>{
+              TargetPlatform.android: ZoomPageTransitionsBuilder(),
+            },
+          ),
         ),
         initialRoute: Routes.homeScreen,
       ),
