@@ -5,8 +5,8 @@ import 'package:news_app/core/theme/colors.dart';
 import 'font_weight_helper.dart';
 
 class TextStyles {
-  static TextStyle font22WhiteRegular = TextStyle(
-    fontSize: 22.sp,
+  static TextStyle font20WhiteRegular = TextStyle(
+    fontSize: 20.sp,
     fontWeight: FontWeightHelper.regular,
     color: Colors.white,
   );
@@ -18,7 +18,7 @@ class TextStyles {
   static TextStyle font14GreenRegular = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.regular,
-    color: ColorsManager.mainGreen,
+    color: ColorsManager.lightBlue,
   );
   static TextStyle font22WhiteBold = TextStyle(
     fontSize: 22.sp,
